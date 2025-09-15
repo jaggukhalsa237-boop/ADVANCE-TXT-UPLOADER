@@ -1,5 +1,5 @@
-# Don't Remove Credit Tg - @Tushar0125
-# Ask Doubt on telegram @Tushar0125
+# Don't Remove Credit Tg - @Happy000777
+# Ask Doubt on telegram @Happy000777
 
 import os
 import re
@@ -43,9 +43,9 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 cookies_file_path = os.getenv("COOKIES_FILE_PATH", "youtube_cookies.txt")
 
-#pwimg = "https://i.ibb.co/5g4T45Rk/image.jpg"
-#ytimg = "https://i.ibb.co/5g4T45Rk/image.jpg"
-cpimg = "https://i.ibb.co/5g4T45Rk/image.jpg"  
+#pwimg = "https://graph.org/file/8add8d382169e326f67e0-3bf38f92e52955e977.jpg"
+#ytimg = "https://graph.org/file/3aa806c302ceec62e6264-60ced740281395f68f.jpg"
+cpimg = "https://graph.org/file/5ed50675df0faf833efef-e102210eb72c1d5a17.jpg"  
 
 
 async def show_random_emojis(message):
@@ -54,13 +54,12 @@ async def show_random_emojis(message):
     return emoji_message
     
 # Define the owner's user ID
-OWNER_ID = 7814356724 # Replace with the actual owner's user ID
+OWNER_ID = 7866412347 # Replace with the actual owner's user ID
 
 # List of sudo users (initially empty or pre-populated)
-SUDO_USERS = [5840594311]
+SUDO_USERS = [-7866412347 , -7814356724]
 
-# ✅ Multiple AUTH CHANNELS allowed
-AUTH_CHANNELS = [-7814356724, -6800797108, -5753585851]  # Add more channel IDs here
+# ✅ Multiple CHANNELS allowed
 
 # Function to check if a user is authorized
 def is_authorized(user_id: int) -> bool:
@@ -117,24 +116,24 @@ async def sudo_command(bot: Client, message: Message):
 keyboard = InlineKeyboardMarkup(
             [
                 [
-                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/happy000777") ],
+                    InlineKeyboardButton("🇮🇳ʙᴏᴛ ᴍᴀᴅᴇ ʙʏ🇮🇳" ,url=f"https://t.me/Happy000777") ],
                     [
-                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/happy000777") ],
+                    InlineKeyboardButton("🔔ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ🔔" ,url="https://t.me/Happy000777") ],
                     [
-                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/happy000777")                              
+                    InlineKeyboardButton("🦋ғᴏʟʟᴏᴡ ᴜs🦋" ,url="https://t.me/Happy000777")                              
                 ],           
             ]
       )
     
 # Image URLs for the random image feature
 image_urls = [
-    "https://i.ibb.co/5g4T45Rk/image.jpg",
+    "https://graph.org/file/ae891e3c5f12b1a88928c-d7b3a9cabc0ddb32fd.jpg",
     # Add more image URLs as needed
 ]
 random_image_url = random.choice(image_urls) 
 # Caption for the image
 caption = (
-        "**hlo👋**\n\n"
+        "**ʜᴇʟʟᴏ👋**\n\n"
         "➠ **ɪ ᴀᴍ ᴛxᴛ ᴛᴏ ᴠɪᴅᴇᴏ ᴜᴘʟᴏᴀᴅᴇʀ ʙᴏᴛ.**\n"
         "➠ **ғᴏʀ ᴜsᴇ ᴍᴇ sᴇɴᴅ /happy.\n"
         "➠ **ғᴏʀ ɢᴜɪᴅᴇ sᴇɴᴅ /help."
@@ -303,7 +302,7 @@ async def edit_txt(client, message: Message):
     try:
         await message.reply_document(
             document=final_file_path,
-            caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ happy**"
+            caption="📥**𝗘𝗱𝗶𝘁𝗲𝗱 𝗕𝘆 ➤ @Happy000777�**"
         )
     except Exception as e:
         await message.reply_text(f"🚨 **Error**: Unable to send the file.\n\nDetails: {e}")
@@ -393,7 +392,7 @@ async def ytplaylist_to_txt(client: Client, message: Message):
         file_name = save_to_file(videos, title)
         await message.reply_document(
             document=file_name, 
-            caption=f"`{title}`\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ happy"
+            caption=f"`{title}`\n\n📥 𝗘𝘅𝘁𝗿𝗮𝗰𝘁𝗲𝗱 𝗕𝘆 ➤ @Happy000777�"
         )
         os.remove(file_name)
     else:
@@ -516,9 +515,9 @@ async def upload(bot: Client, m: Message):
     raw_text3 = input3.text
     await input3.delete(True)
     # Default credit message with link
-    credit = "️[𝗧𝘂𝘀𝗵𝗮𝗿](https://t.me/Tushar0125)"
+    credit = "️[@Happy000777�](https://t.me/happy0125)"
     if raw_text3 == '1':
-        CR = '[𝗧𝘂𝘀𝗵𝗮𝗿](https://t.me/Tushar0125)'
+        CR = '[@Happy000777�](https://t.me/happy0125)'
     elif raw_text3:
         try:
             text, link = raw_text3.split(',')
@@ -544,7 +543,7 @@ async def upload(bot: Client, m: Message):
 
     
 
-    await editable.edit("𝗡𝗼𝘄 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗧𝗵𝘂𝗺𝗯 𝗨𝗿𝗹 𝗘𝗴 » https://i.ibb.co/5g4T45Rk/image.jpg\n\n𝗢𝗿 𝗜𝗳 𝗗𝗼𝗻'𝘁 𝗪𝗮𝗻𝘁 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹 𝗦𝗲𝗻𝗱 = 𝗻𝗼")
+    await editable.edit("𝗡𝗼𝘄 𝗦𝗲𝗻𝗱 𝗧𝗵𝗲 𝗧𝗵𝘂𝗺𝗯 𝗨𝗿𝗹 𝗘𝗴 » https://graph.org/file/13a89d77002442255efad-989ac290c1b3f13b44.jpg\n\n𝗢𝗿 𝗜𝗳 𝗗𝗼𝗻'𝘁 𝗪𝗮𝗻𝘁 𝗧𝗵𝘂𝗺𝗯𝗻𝗮𝗶𝗹 𝗦𝗲𝗻𝗱 = 𝗻𝗼")
     input6 = message = await bot.listen(editable.chat.id)
     raw_text6 = input6.text
     await input6.delete(True)
