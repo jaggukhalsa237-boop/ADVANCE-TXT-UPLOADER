@@ -39,16 +39,3 @@ pycurl
 m3u8
 bs4
 pytube
-aiogram
-telethon
-sqlalchemy
-apscheduler
-rich
-loguru
-httpx
-tqdm
-uvicorn
-gunicorn
---break
--system
--packages
